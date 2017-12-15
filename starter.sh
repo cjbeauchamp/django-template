@@ -21,9 +21,12 @@ npm install
 echo "Creating database locally..."
 createdb ${APP_NAME_SUFFIX}
 
-echo "Migrating db"
+echo "Migrating db..."
 python manage.py makemigrations ${APP_NAME_SUFFIX}
 python manage.py migrate
+
+echo "Creating superuser..."
+python manage.py createsuperuser
 
 echo "All done! To deploy, run:"
 echo "sh deploy.sh"
