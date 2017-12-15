@@ -4,8 +4,11 @@ django-admin.py startproject \
 	--template=https://github.com/cjbeauchamp/django-template/archive/master.zip \
 	--name=Procfile \
 	--name=gulpfile.js \
-	--name=./project_name/static/lib/package.json \
-	--name=./${APP_NAME_SUFFIX}/static/lib/package.json \
+	--name=project_name/static/js/app.js \
+	--name=${APP_NAME_SUFFIX}/static/js/app.js \
+	--name=project_name/templates/base.html \
+	--name=${APP_NAME_SUFFIX}/templates/base.html \
+	--name=gulpfile.js \
 	${APP_NAME_SUFFIX}
 
 cd ${APP_NAME_SUFFIX}
