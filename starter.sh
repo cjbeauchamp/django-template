@@ -9,6 +9,10 @@ pip install -r requirements.txt
 echo "Creating database locally..."
 createdb ${APP_NAME_SUFFIX}
 
+echo "Migrating db"
+python manage.py makemigrations ${APP_NAME_SUFFIX}
+python manage.py migrate
+
 echo "All done! To deploy, run:"
 echo "sh deploy.sh"
 
