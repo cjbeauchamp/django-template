@@ -5,3 +5,4 @@ psycopg2==2.6.2
 whitenoise==3.2
 redis==2.10.6
 rq==0.9.2
+django-log-request-id==1.1.0
