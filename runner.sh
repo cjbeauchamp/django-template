@@ -4,11 +4,11 @@ function new_tab() {
   osascript \
     -e "tell application \"Terminal\"" \
     -e "tell application \"System Events\" to keystroke \"t\" using {command down}" \
-    -e "delay 5"
+    -e "delay 2" \
     -e "do script \"$COMMAND\" in front window" \
     -e "end tell" > /dev/null
 }
 
-new_tab "Redis" "source venv/bin/activate; redis-server;"
+new_tab "Redis" "redis-server;"
 new_tab "Web" "source venv/bin/activate; heroku local web;"
 new_tab "Worker" "source venv/bin/activate; heroku local worker;"
