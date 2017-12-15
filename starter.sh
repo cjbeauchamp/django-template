@@ -35,3 +35,8 @@ echo ""
 
 echo "Or to run locally, use:"
 echo "sh runner.sh"
+
+echo ""
+
+echo "Don't forget to create a superuser:"
+echo "python manage.py createsuperuser"
