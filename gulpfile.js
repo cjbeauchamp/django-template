@@ -1,6 +1,6 @@
 'use strict';
 
-var root_dir = "./{{ project_name }}/static"
+var root_dir = "./myappname/static"
 
 var gulp = require('gulp');
 var sass = require('gulp-sass');
@@ -29,3 +29,4 @@ gulp.task('js:watch', function() {
 });
 
 gulp.task('compile', ['js', 'sass']);
+gulp.task('watch', ['js:watch', 'sass:watch']);

@@ -1,3 +1,5 @@
+# Run by calling `source runner.sh`
+
 function new_tab() {
   TAB_NAME=$1
   COMMAND=$2
@@ -10,5 +12,9 @@ function new_tab() {
 }
 
 new_tab "Redis" "redis-server;"
+new_tab "Redis" "gulp watch;"
 new_tab "Web" "source venv/bin/activate; heroku local web;"
 new_tab "Worker" "source venv/bin/activate; heroku local worker;"
+
+# get this tab set up for python activity
+source venv/bin/activate
