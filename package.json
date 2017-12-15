@@ -8,5 +8,8 @@
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^3.0.0",
     "gulp-concat": "^2.6.1"
+  },
+  "start": {
+    "postinstall": "cd {{ project_name }}/static/lib && npm install"
   }
 }
