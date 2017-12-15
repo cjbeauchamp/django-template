@@ -27,3 +27,5 @@ gulp.task('js', function() {
 gulp.task('js:watch', function() {
   gulp.watch([root_dir + '/js/*.js'], ['js']);
 });
+
+gulp.task('compile', ['js', 'sass']);
