@@ -6,5 +6,13 @@ virtualenv venv
 source venv/bin/activate
 pip install -r requirements.txt
 
+echo "Creating database locally..."
+createdb ${APP_NAME_SUFFIX}
+
 echo "All done! To deploy, run:"
 echo "sh deploy.sh"
+
+echo ""
+
+echo "Or to run locally, use:"
+echo "sh runner.sh"
