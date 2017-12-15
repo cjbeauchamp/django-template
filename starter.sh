@@ -19,6 +19,7 @@ pip install -r requirements.txt
 
 echo "Installing our node modules..."
 npm install
+./node_modules/recursive-install/recursive-install.js 
 
 echo "Compiling our resources..."
 gulp compile
