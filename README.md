@@ -2,7 +2,7 @@
 
 To use this project, follow these steps:
 
-	$ curl -L https://raw.githubusercontent.com/cjbeauchamp/django-template/master/starter.sh | sh -s
+	$ curl -L https://raw.githubusercontent.com/cjbeauchamp/django-template/master/starter.sh | sh -s myappname
 
 ## Run it locally
 	

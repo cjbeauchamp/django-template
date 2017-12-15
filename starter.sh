@@ -1,4 +1,4 @@
-read -p "Enter the app name => du-" APP_NAME_SUFFIX
+APP_NAME_SUFFIX=$1
 
 django-admin.py startproject \
 	--template=https://github.com/cjbeauchamp/django-template/archive/master.zip \
