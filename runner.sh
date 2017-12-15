@@ -4,7 +4,8 @@ function new_tab() {
   osascript \
     -e "tell application \"Terminal\"" \
     -e "tell application \"System Events\" to keystroke \"t\" using {command down}" \
-    -e "do script \"printf '\\\e]1;$TAB_NAME\\\a'; $COMMAND\" in front window" \
+    -e "delay 5"
+    -e "do script \"$COMMAND\" in front window" \
     -e "end tell" > /dev/null
 }
 
