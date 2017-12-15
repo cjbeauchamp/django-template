@@ -2,14 +2,7 @@
 
 To use this project, follow these steps:
 
-	$ curl -L https://gist.github.com/cjbeauchamp/6d69abeabefdabd62ec97b62971c5e0b.txt | bash -s supdude
-
-	$ mkdir helloworld && cd helloworld
-	$ virtualenv venv
-	$ source venv/bin/activate
-	$ pip install django==1.11.1
-    $ django-admin.py startproject --template=https://github.com/cjbeauchamp/django-template/archive/master.zip --name=Procfile helloworld
-	$ pip install -r requirements.txt
+	$ curl -L https://raw.githubusercontent.com/cjbeauchamp/django-template/master/starter.sh | sh -s supdude
 
 ## Run it locally
 	
