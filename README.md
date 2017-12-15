@@ -6,14 +6,8 @@ To use this project, follow these steps:
 
 ## Run it locally
 	
-	$ // redis
-	$ redis-server
-	
-	$ // webserver
-	$ heroku local web
-	
-	$ // worker
-	$ heroku local worker
+	$ // this will open a new tab for redis, worker, and web process
+	$ sh runner.sh
 
 ## Deployment to Heroku
 
