@@ -1,0 +1,12 @@
+{
+  "name": "django-template",
+  "version": "1.0.0",
+  "description": "To use this project, follow these steps:",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-concat": "^2.6.1"
+  }
+}
