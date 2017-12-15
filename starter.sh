@@ -7,9 +7,16 @@ django-admin.py startproject \
 	${APP_NAME_SUFFIX}
 
 cd ${APP_NAME_SUFFIX}
+
+echo "Setting up our virtual environment..."
 virtualenv venv
 source venv/bin/activate
+
+echo "Installing our node modules..."
 pip install -r requirements.txt
+
+echo "Installing our node modules..."
+npm install
 
 echo "Creating database locally..."
 createdb ${APP_NAME_SUFFIX}
