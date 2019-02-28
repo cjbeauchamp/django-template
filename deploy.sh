@@ -1,10 +1,10 @@
-read -p "Enter the app name => du-" APP_NAME_SUFFIX
+read -p "Enter the app name => " APP_NAME_SUFFIX
 
 git init
 git add -A
 git commit -m "Initial commit"
 
-APP_NAME="du-${APP_NAME_SUFFIX}"
+APP_NAME="${APP_NAME_SUFFIX}"
 APP_NAME_STAGING="${APP_NAME}-staging"
 
 heroku create ${APP_NAME_STAGING} --remote staging
