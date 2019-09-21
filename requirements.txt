@@ -1,4 +1,4 @@
-Django==1.11.1
+Django==1.11.23
 gunicorn
 redis==2.10.6
 rq==0.10.0
